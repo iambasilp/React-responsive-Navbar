@@ -1,0 +1,109 @@
+.gpt__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.gpt__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gpt__navbar-links__logo{
+    margin-right: 2rem;
+}
+.gpt__navbar-links__logo h1{
+    font-size: 3rem;
+}
+.gpt__navbar-links__container{
+    display: flex;
+    flex-direction: row;
+}
+.gpt__navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gpt__navbar-links__container p,
+.gpt__navbar-sign p,
+.gpt__navbar-menu__container p{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.gpt__navbar-sign button,
+.gpt__navbar-menu__container-links-sign button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.gpt__navbar-menu{
+    position: relative;
+    display: none;
+    margin-left: 1rem;
+}
+.gpt__navbar-menu__container{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    min-width: 210px;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    background-color:#230331;
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.gpt__navbar-menu__container p{
+    margin: 1rem 0;
+}
+.gpt__navbar-menu__container-links-sign{
+    display: none;
+}
+@media screen and (max-width:1050px) {
+    .gpt__navbar-links__container{
+        display: none;
+    }
+    .gpt__navbar-menu{
+        display: flex;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .gpt__navbar{
+        padding: 2rem 6rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .gpt__navbar{
+        padding: 2rem;
+    }
+    .gpt__navbar-sign{
+        display: none;
+    }
+    .gpt__navbar-menu__container-links-sign{
+        display: block;
+    }
+    .gpt__navbar-menu__container{
+        top: 20px;
+    }
+}
